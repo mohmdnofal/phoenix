@@ -7,9 +7,8 @@ Welcome to project Phoenix - a hands on workshop to practice container technolog
 After the workshop you should have hands on experience with:
 1. Defining Application and system architectures for containers.
 2. Defining, configuring up and maintaining runtime environments for containers in Azure.
-3. Configuration options for CI/CD pipeline for containers in Azure.
-4. Unterstanding of Kubernetes objects (Pods, Services, Deployments, Secrets) and their usage for multi container applications.
-5. Logging, scaling and monitoring of container runtimes.
+3. Unterstanding of Kubernetes objects (Pods, Services, Deployments, Secrets) and their usage for multi container applications.
+4. Logging, scaling and monitoring of container runtimes.
 
 ![](/img/kubernetes_on_azure.png)
 
@@ -20,6 +19,7 @@ After the workshop you should have hands on experience with:
 1. [Set up](challenges.0.md) your system.
 2. Accomplish the [Single Loop Challenge](challenges.1.md) and learn about container basics and Azure Container Instances for single container applications.
 3. Do the [Kubernetes 101 Challenges](challenges.2.md) and learn about Kubernetes basic concepts (pods and services),deploy a container to your cluster and make it available in the internet.
-4. Face [the Kubernetes Multicontainer Challenge](challenges.3.md) and deploy a complex multi container application update with zero downtime using an end to end DevOps pipeline automated by VSTS by using Kubernetes deployments.
-5. Professionalize your operations using insights in the [Operations and Application Insights Challenge](challenges.4.md). Upgrade your application with another backend implementation written in Go, meassure the performance, reason about the performance metrics using Application Insights and if the new version is not good enough perform a rollback - without downtime.
-6. Package your application and make use of the open service broker api to integrate your app into native Azure PaaS services by mastering the [Integration Challenge](challenges.5.md).
+4. Professionalize your operations using insights in the [Operations and Application Insights Challenge](challenges.4.md). Upgrade your application with another backend implementation written in Go, meassure the performance, reason about the performance metrics using Application Insights and if the new version is not good enough perform a rollback - without downtime.
+5- Monitor your cluster for critical security patches 
+6- Monitor the health of your cluster
+7. Package your application and make use of the open service broker api to integrate your app into native Azure PaaS services by mastering the [Integration Challenge](challenges.5.md).
