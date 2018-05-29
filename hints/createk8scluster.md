@@ -6,7 +6,7 @@ Look up regions https://github.com/Azure/AKS/blob/master/preview_regions.md
 
 1. Use bash to create the resource group by using azure cloud shell (https://shell.azure.com/ )
 ```
-LOCATION=eastus
+LOCATION=westeurope
 KUBE_GROUP=myKubeRG
 KUBE_NAME=myFirstKube
 az group create -n $KUBE_GROUP -l $LOCATION
@@ -14,7 +14,7 @@ az group create -n $KUBE_GROUP -l $LOCATION
 
 2. Create the aks cluster
 ```
-az aks create --name $KUBE_NAME --resource-group $KUBE_GROUP --node-count 3 --generate-ssh-keys --kubernetes-version 1.8.7
+az aks create --name $KUBE_NAME --resource-group $KUBE_GROUP --node-count 1 --generate-ssh-keys
 ```
 Additional parameters can be found here https://docs.microsoft.com/en-us/cli/azure/aks?view=azure-cli-latest#az_aks_create
 if you have to use the given service principal (because you are not allowed to create services principals in azure ad) add the following parameters
