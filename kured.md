@@ -5,7 +5,7 @@ Azure automatically applies security patches to the nodes in your AKS cluster on
 
 * Manually, through the Azure portal or the Azure CLI. 
 
-* By upgrading your AKS cluster. Cluster upgrades automatically cordon and drain nodes, then bring them back up with the latest Ubuntu image. You can use this process without changing Kubernetes versions by performing an az aks upgrade targeting the same Kubernetes version currently on your cluster. 
+* By upgrading your AKS cluster. Cluster upgrades automatically [cordon and drain nodes](https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/), then bring them back up with the latest Ubuntu image. You can use this process without changing Kubernetes versions by performing an az aks upgrade targeting the same Kubernetes version currently on your cluster. 
 
 * Using Kured, an open-source reboot daemon for Kubernetes. Kured runs as a DaemonSet and monitors each node for the presence of a file indicating that a reboot is required. It then orchestrates those reboots across the cluster, following the same cordon and drain process described earlier. 
 
