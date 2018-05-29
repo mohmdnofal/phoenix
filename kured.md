@@ -24,4 +24,13 @@ Kured (KUbernetes REboot Daemon) is a Kubernetes daemonset that performs safe au
 * Cordons & drains worker nodes before reboot, uncordoning them after
 
 
+# Lab
+
+In this lab we will be installing Kured, login to the nodes and simulate a reboot and observe what happens. a bonus challenge will be to integrate Kured with a slack channel.
+
+Install kured 
+kubectl apply -f https://github.com/weaveworks/kured/releases/download/1.0.0/kured-ds.yaml
+
+Famelrize yourself with the possible [parameters] (https://github.com/weaveworks/kured#configuration), take note of 
+* --period duration
 
